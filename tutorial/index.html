@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!-- remember first page must be index.html -->
+<html>
+
+<!-- The <head> element is where we put metadata about that our webpages requires to render properly in the browser -->
+<head>
+    <!-- This tells the browser what character set we are using -->
+    <meta charset="utf-8">
+    <title>My First Website</title>
+</head>
+
+<!-- <body> element is where all the content that is displayed to the user goes -->
+<body>
+    My First Website!       Note that anything inside the body element      ignores spaces                  like
+    so.
+    <p> Paragraph tags help with separating blocks of text                      like so . Note that             paragraphs      ignore      white       spaces
+    too</p>
+
+    <h1>Heading 1 (this heading is larger than heading 2)<h1>
+    <h2>Heading 2 (this heading is larger than heading 3)<h2>
+    <h3>Heading 3 (you get the point by now)<h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+    <h7>No such thing as Heading 7, this element acts like a paragraph element</h7>
+
+    <!-- Making bold & italic text -->
+    <p>This is an example of <strong>bolded text</strong> using the <strong> strong tag </strong>. Remember to close your strong tags otherwise <strong> Everything is bolded </strong></p>
+    <p>This is an example of <em>Italic text</em></p>
+    <p>You may see <b>b</b> & <i>i</i> tag and you'll notice that these will bold and italsize respectively BUT the issue is that this only gives a visual representation of bold and italize, which may be an issue with those that have trouble reading</p>
+    <p>note that when nesting elements within other elements, a parent & child relationship is created between them. HTML parent elements can have may children, elements at the same leveling of
+    nesting are considered to be siblings</p>
+
+    <p>Here is an unordered list</p>
+    <ul>    <!-- This is an Unlisted List element -->
+        <li>Item 1</li> <!-- This is a List Item element -->
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+
+    <p>Here is an ordered list</p>
+    <ol>
+        <li>Item 1</li> <!-- This is a List Item element -->
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+    <p>What happens when I nest a list inside a paragraph element.
+    <ol>
+        <li>Item 1</li> <!-- This is a List Item element -->
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+    Doesn't look any different than the above list & paragraph elements I made, so I nested an unordered list element after this
+    <ul>    <!-- This is an Unlisted List element -->
+        <li>Item 1</li> <!-- This is a List Item element -->
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+    Wow that did nothing as well.
+    </p>
+    
+    <h1> Anchor Elements for links </h1>
+    <p>The internet is <strong>essentially a web of HTML pages connected to one another with links</strong></p>
+    <!-- Anchor tags are used to create a link -->
+    <a>Click me!</a>
+    <p> You may noticed that this link doesn't do anything, thats because the anchor tag is missing a destination, this can be remedied by using an <em>HTML attribute.</em>
+    an HTML attribute gives additional info to an HTML element and always goes in the element's opening tag.</p>
+    <p>An attribute is made up of 2 parts: a name, and a value. In this case, we need to add a href(<strong>hyperlink reference</strong> attribute to the opening tag. The
+    value of href is our desired link to go to.</p>
+    <a href="https://www.odinproject.com/about">Click me!</a>
+
+    <p>By default, any text wrapped in an anchor tag will look like plain text, however if the href attribute is used, the browser will give the text a<em> blue color & underline</em> it to signify its a link</p>
+
+    <h2>Absolute & Relative links</h2>
+    <p>Links to pages on other websites are called <strong>Absolute links</strong>. An typical absolute link will be made up of the following parts: <em>protocol://domain/path</em>. An
+    absolute link will always contain the protocol and domain of the destination</p>
+    <p>Example: https://www.theodinproject.com/about</p>
+
+    <h3>Relative links</h3>
+    <p>Links to other pages within a website are called relative links. Relative links do not include the domain name, since it is another page on the same site, it assumes the domain name will be the same 
+    as the page we created the link on.</p>
+    <p>Relative links only include the <em>file path</em> to the other page, <strong>relative</strong> to the page you're creating the link on (example: like linux paths).</p>
+    <p>Example:</p>
+    <a href="./pages/about.html">About</a>
+
+    <h4>Images</h4>
+    <p>To display an image in HTML we use the "img" element. Unlike other elements, "img" element is empty which means it does not have a closing tag.</p>
+    <p>Instead of wrapping content between an opening & closing tag, it embeds an image into the page using a <em>src</em> attribute which tells the browser where the image file is located.
+    The <em>src</em> attribute tells the browser where the image file is located; The <em>src</em> attribute works similar to an href attribute for anchor tags. It can embed an image using both absolute
+    and relative paths.</p>
+
+    <h4>Example image of Charles the Dog</h4>
+    <img src = "./images/dog.jpg" alt="An example image of Charles the Dog">
+
+    <p>
+    <a href="pictures.html">Image tutorial</a>
+    </p>
+</body>
+
+</html>

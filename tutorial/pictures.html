@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pictures page</title>
+</head>
+<body>
+    <h1>JPG images<h1>
+    <p>JPG images are designed for handling large color palettes without exorbitantly increasing the file size. This makes them great for photos and images with lots of gradients in them.
+    However, JPGS don't allow for transparent pixels.</p>
+    <img src ="./images/mochi.jpg" alt="a mochi jpg">
+
+    <h1>GIF images</h1>
+    <p>GIFs are used for simple animations, however they're somewhat limited in terms of color palette-never use them for photos. Transparent pixels are a binary option for GIFs,
+    meaning you can't have semi-opaque pixels. This can make it difficult to get high levels of detail on a transparent background. For this reason, its better to use PNG images
+    if you don't need animations.</p>
+    <img src="./images/mochi.gif" alt="a mochi gif">
+
+    <h1>PNG images</h1>
+    <p>PNGs are great for anything that's not a photo or animated. For photos, a PNG file of the same quality would generally be bigger than the same picture in a JPG format. However they deal with
+    opacity just fine, and they are not constrained by color palettes. This makes them an excellet fit for icons, techinical design, logos, etc.</p>
+    <img src="./images/mochi.png" alt="a mochi png">
+
+    <h1>SVG images</h1>
+    <p>SVG is a vector-based graphics format, where it can be scalable to any dimension without a loss of quality. This makes SVG great for responsive design. They're good for all the
+    same cases as PNGs and should use them whenver you can.</p>
+    <p>An example of this can be seen when an image is 100x100 pixels and is required to be scaled up to 300x300. SVG will have clean crisp lines while other image formats will look very pixelated.</p>
+    <img src="./images/mochi.svg" alt="a mochi svg">
+    <p>An issue with SVGs is how consistenly they can be displayed across various browsers, you'll need to convert any text fields to outline using an image editor such as Abode Illustrator or Sketch.
+    If your images contain a lot of text, this can have a big impact on file size which is an advantage that PNGs have over SVGs.</p>
+
+    <h1>About image dimensions</h1>
+    <p>By default, the img element uses inherit dimensions of its image file, the above JPG, GIF, and PNG images are actually 150x150, while the SVG mochi is only 75x75 pixels.
+    If we want to change the pixel based images down to a smaller size, we can use the "img" element's <em>width</em> attribute.</p>
+    <img src="./images/mochi.png" alt="a mochi png thats been scaled down" width='75'/>
+    <p>There is also a height attribute as well, setting only one of these attributes will cause the image to scale propertionally, while
+    defining both will scale the image accordingly.</p>
+</body>
+</html>
